@@ -1,0 +1,14 @@
+{
+  "name": "ranger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies" : {
+    "validate-cloud-config" : "1.0.0"
+  }
+}
