@@ -1,0 +1,10 @@
+rancher-server-preview:
+  image: ${REGISTRY_DOMAIN}/rancher/server:preview
+  privileged: false
+  labels:
+    io.rancher.os.scope: user
+    io.rancher.os.after: docker
+  restart: unless-stopped
+  ports:
+    - 80:80
+    - 443:443
