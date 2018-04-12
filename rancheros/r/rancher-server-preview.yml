@@ -1,6 +1,6 @@
 rancher-server-preview:
   image: rancher/server:preview
-  privileged: false
+  privileged: true
   labels:
     io.rancher.os.scope: user
     io.rancher.os.after: docker
@@ -8,3 +8,5 @@ rancher-server-preview:
   ports:
     - 80:80
     - 443:443
+  volumes:
+    - /data:/var/lib/rancheros/server_preview
