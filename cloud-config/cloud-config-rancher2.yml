@@ -10,6 +10,16 @@ rancher:
     tls: false
   environment:
     EXTRA_CMDLINE: /init
+  services:
+    user-volumes:
+      volumes:
+      - /home:/home                                                                   
+      - /opt:/opt                                                                     
+      - /var/lib/kubelet:/var/lib/kubelet                                             
+      - /etc/kubernetes:/etc/kubernetes
+  repositories:
+    senacor:
+      url: https://raw.githubusercontent.com/senacor/Barn/master/rancheros/
   network:
     dns:
       nameservers:
