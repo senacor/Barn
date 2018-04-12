@@ -9,4 +9,4 @@ rancher-server-preview:
     - 80:80
     - 443:443
   volumes:
-    - /data:/var/lib/rancheros/server_preview
+    - /var/lib/rancheros/server_preview:/var/lib/rancher
